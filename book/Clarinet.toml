@@ -1,0 +1,16 @@
+[project]
+name = "multisig-wallet"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+
+[networks.local]
+name = "local"
+rpc_url = "http://127.0.0.1:20443"
+
+[networks.testnet]
+name = "testnet"
+rpc_url = "https://stacks-node-api.testnet.stacks.co"
+
+[networks.mainnet]
+name = "mainnet"
+rpc_url = "https://stacks-node-api.mainnet.stacks.co"
