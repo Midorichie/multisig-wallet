@@ -1,16 +1,20 @@
 [project]
 name = "multisig-wallet"
-version = "0.1.0"
-authors = ["Your Name <you@example.com>"]
+description = "A secure multi-signature wallet implementation"
+authors = []
+version = "1.0.0"
 
-[networks.local]
-name = "local"
-rpc_url = "http://127.0.0.1:20443"
+[project.requirements]
+clarinet = "2.0"
 
-[networks.testnet]
-name = "testnet"
-rpc_url = "https://stacks-node-api.testnet.stacks.co"
+[[project.contracts]]
+path = "contracts/multisig.clar"
+name = "multisig"
 
-[networks.mainnet]
-name = "mainnet"
-rpc_url = "https://stacks-node-api.mainnet.stacks.co"
+[[project.contracts]]
+path = "contracts/utils.clar"
+name = "utils"
+
+[[project.contracts]]
+path = "contracts/timelock.clar"
+name = "timelock"
